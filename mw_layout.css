@@ -1,0 +1,167 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 2
+
+   Mountain Wheels Layout Style
+   Author: Adriana Turchenko 
+   Date:   3/1/2014
+
+   Filename:         mw_layout.css
+   Supporting Files: none
+
+*/
+/*edits by Arzoo Atiq*/
+/*secondary edits by Isaac Eng*/
+/* Layout styles */
+
+
+body {
+   margin: 0px auto;
+   padding: 0px;
+   width: 800px;
+  font-family: Geneva, Tahoma, sans-serif;
+ }
+
+
+header, footer {
+   margin: 0px auto;
+}
+
+
+nav {
+   float: left;
+   margin-right: 5px;
+   margin-left: 0;
+   /*width: 150px;*/
+   width:200px; /*edit*/
+   color:white;
+   background-color: rgba(125,120,89,1);
+   line-height: 3em;
+}
+
+ul {
+    text-decoration:underline;
+    text-decoration-color:white;
+    text-decoration-color:rgba(255,255,255,0);
+    margin: 0 0 0 0px;
+    padding: 0;
+    width: 150px;
+}
+
+li a {
+    text-align: center;
+    display: block;
+    color: #FFF;
+    color: rgba(255,255,255,.5);
+    padding: 0px 0px;
+    text-decoration: none;
+}
+
+    li a:hover {
+        background-color: #555;
+        color: yellow;
+        color: rgba(255,255,255,1);
+        list-style-image: image('wheelmarker.png');
+    }
+
+    
+
+#pageheader {
+    font-size: 22px;
+    kerning: 3px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#leftsection {
+    font-size: 22px;
+    float: left;
+    margin-top: 10px;
+    width: 45%; /*edit*/
+}
+
+    #leftsection p::first-line {
+        text-transform: uppercase;
+    }
+
+#articleheader h1 {
+    margin-bottom: 10px;
+}
+
+
+#rightsection {
+   float: right;
+   width: 25%; /*edit*/
+   height:auto;
+   color: gray;
+   font-size:14px;
+   text-align:justify;
+}
+
+#rightsection h1{
+    font-size: 22px;
+    kerning: 3px;
+    text-align: center;
+    color:black;
+    font-weight: lighter;
+}
+
+#articleheader {
+    float: left;
+    width: 325px;
+    font-size: 18px;
+    kerning: 7px;
+    text-align: center;
+    font-size: 26px;
+    color: black;
+    font-weight: bolder;
+}
+
+
+h1, h2 {
+   margin: 0px;
+   padding: 0px;
+}
+
+#quote {
+    quotes: "&#8220" "&#8221";
+}
+
+blockquote {
+   border: 1px solid black;
+   float: right;
+   padding: 15px;
+   width: 120px;
+   background-color:rgb(131,121,36);
+   color: white;
+   font-size: 16px;
+   font-family: 'Comic Sans MS', 'Times New Roman', cursive;
+   -moz-border-radius: 35px;
+   border-radius: 35px;
+   box-shadow:10px 10px 20px #000;
+   -webkit-box-shadow:10px 10px 20px #000;
+   -moz-box-shadow: 10px 10px 20px #000;
+}
+blockquote p{
+    text-align:left;
+}
+
+blockquote::first-line{
+    text-transform:uppercase;
+}
+
+section p {
+   margin-top: 0px;
+   margin-bottom: 10px;
+   /*text-align: justify;*/
+}
+
+footer address {
+    border-top: 1px solid black;
+    clear: both;
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+}
+
